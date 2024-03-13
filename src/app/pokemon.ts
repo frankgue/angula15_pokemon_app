@@ -2,8 +2,8 @@ export class Pokemon {
   id: number;
   hp: number;
   cp: number;
-  name: String;
-  picture: String;
-  types: Array<String>;
+  name: string;
+  picture: string;
+  types: Array<string>;
   created: Date;
 }

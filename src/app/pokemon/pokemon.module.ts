@@ -9,8 +9,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { PokemonService } from './pokemon.service';
 import { FormsModule } from '@angular/forms';
 import { PokemonFormComponent } from './pokemon-form/pokemon-form.component';
+import { EditPokemonComponent } from './edit-pokemon/edit-pokemon.component';
 
 const pokemonRoutes: Routes = [
+  { path: 'edit/pokemon/:id', component: EditPokemonComponent },
   { path: 'pokemons', component: ListPokemonComponent },
   { path: 'pokemon/:id', component: DetailPokemonComponent }
 ];
@@ -22,7 +24,8 @@ const pokemonRoutes: Routes = [
     DetailPokemonComponent,
     BorderCardDirective,
     PokemonTypeColorPipe,
-    PokemonFormComponent
+    PokemonFormComponent,
+    EditPokemonComponent
   ],
   imports: [
     CommonModule,
